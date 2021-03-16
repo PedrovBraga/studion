@@ -141,8 +141,11 @@ li {
     border: var(--color-primary);
     background-color: var(--color-primary);
     color: #fff;
+<<<<<<< HEAD
 }
 
 #counter {
     background-color: var(--color-primary);
+=======
+>>>>>>> 4b31d20a19e8039afffffcc3879253e3f9dfc2af
 }

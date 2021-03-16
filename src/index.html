@@ -4,11 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Studion</title>
 </head>
-<body>
-    <h1>Minha noossssa!</h1>
-    <h3>Qual é a boa?</h3>
-    <p>Muleke eh nois pogramacao de html di new</p>
-</body>
+    <body>
+        <nav class="navbar">
+            <h1 class="logo-studion">
+                Studi<span class="copy--primary">on</span>
+                <span class="logo-studion_subtitle">Eventos</span>
+            </h1>
+            <ul class="navbar__links">
+                <li>
+                    <a href="#empresa">
+                        Empresa
+                    </a>
+                </li>
+                <li>
+                    <a href="#eventos">
+                        Eventos
+                    </a>
+                </li>
+                <li>
+                    <a href="#galeria">
+                        Galeria
+                    </a>
+                </li>
+                <li>
+                    <a href="#depoimentos">
+                        Depoimentos
+                    </a>
+                </li>
+                <li>
+                    <a href="#contato">
+                        Contato
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <header>
+            <div id="slider">
+                <div class="slide">
+                    <img class = "slide_background-image" src="./images/banner.jpg" alt="Studion Banner">
+                    <div class="slide_copy"> 
+                        <h6><span class="copy--primary">Próximo evento</span> - Dia 25 de setembro às 19h</h6>
+                        <h2><span class="copy--primary">Creative</span> Minds</h2>
+                        <button class="btn btn-slide">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <ul>
+                    <li><h3>+ de 500</h3>eventos realizados</li>
+                    <li><h3>+ de 1.000.000 </h3>de ingressos vendidos</li>
+                    <li><h3>+ de 300</h3> empresas atendidas</li>
+                </ul>
+            </section>
+            
+            <section>
+                <img src="./images/institutional.jpg" alt=""> 
+                <div id="">
+                    <h6>blablablabla</h6>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae possimus vero velit, voluptate itaque ea neque beatae qui ex, dolorem libero, quidem sed voluptas quasi ut! Iusto doloribus corrupti unde.
+                    </p>
+                    <button>Saiba Mais</button>
+                </div>
+            </section>
+        
+            <section>
+                <div>
+                    <img src="./images/parallax.jpg" alt="">
+                    <h6>Você informa a temática e nós criamos um evento com tecnologia e muito mais.</h6>
+                    <h2><span>Muito+ </span>Diversão</h2>
+                    <button>Fazer cotação</button>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <h2>Studi<span>on</span><span>Eventos</span></h2>
+            <form action="">
+                <label for="">receba news e promoções</label>
+                <input type="email" placeholder="email">
+                <button type="submit">Enviar</button>
+            </form>
+            <ul>
+                <li href="facebok.com" target="_blank">Facebool</li>
+                <li href="twiter.com" target="_blank">Twitter</li>
+                <li href="youtube.com" target="_blank">Youtube</li>
+            </ul>
+            <hr/>
+            <p>
+                <small>Studio<span>ON</span> - Todos os direito reservados.</small>
+            </p>
+        </footer>
+    </body>
 </html>
