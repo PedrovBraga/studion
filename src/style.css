@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
-=======
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
->>>>>>> 4b31d20a19e8039afffffcc3879253e3f9dfc2af
 
 * {
     box-sizing: border-box;
@@ -11,15 +7,10 @@
 :root {
     font-family: 'Montserrat', sans-serif ;
     font-size: 16px;
-<<<<<<< HEAD
     --color-copy: #333;
     --color-primary: #ffc500;
     --default-padding: 1rem;
     color: var(--color-copy);
-=======
-    --color-primary: #ffc500;
-    --default-padding: 1rem;
->>>>>>> 4b31d20a19e8039afffffcc3879253e3f9dfc2af
 }
 
 body {
@@ -27,7 +18,6 @@ body {
     padding-top: 7.75rem;
 }
 
-<<<<<<< HEAD
 
 
 header, main, footer {
@@ -39,8 +29,6 @@ header, main, footer {
     margin: 0 auto;
 }
 
-=======
->>>>>>> 4b31d20a19e8039afffffcc3879253e3f9dfc2af
 header h6 {
     margin: 0;
 }
@@ -58,7 +46,6 @@ li {
 .navbar {
     position: fixed;
     z-index: 1;
-<<<<<<< HEAD
     top: 0;
     left: 0;
     width: 100%;
@@ -71,24 +58,12 @@ li {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-=======
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    align-items: center;
-    top: 0;
-    left: 0;
->>>>>>> 4b31d20a19e8039afffffcc3879253e3f9dfc2af
 
     width: 100vw;
     height: 7.75rem;
     padding: 0 1rem;
 
-<<<<<<< HEAD
     
-=======
-    background-color: #000;
-    color: #fff;
->>>>>>> 4b31d20a19e8039afffffcc3879253e3f9dfc2af
 }
 
 .navbar__links {
@@ -181,7 +156,6 @@ li {
     transition: 0.3s all ease;
 }
 
-<<<<<<< HEAD
 .btn:hover, .btn:active, .btn:focus, .btn-institutional {
     border-color: var(--color-primary);
     background-color: var(--color-primary);
@@ -250,10 +224,4 @@ li {
 .btn-institutional:hover {
     color: var(--color-copy);
     background: unset;
-=======
-.btn:hover, .btn:active, .btn:focus {
-    border: var(--color-primary);
-    background-color: var(--color-primary);
-    color: #fff;
->>>>>>> 4b31d20a19e8039afffffcc3879253e3f9dfc2af
 }
