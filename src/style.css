@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,13 +7,26 @@
 :root {
     font-family: 'Montserrat', sans-serif ;
     font-size: 16px;
+    --color-copy: #333;
     --color-primary: #ffc500;
     --default-padding: 1rem;
+    color: var(--color-copy);
 }
 
 body {
     margin: 0;
     padding-top: 7.75rem;
+}
+
+
+
+header, main, footer {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 header h6 {
@@ -33,18 +46,24 @@ li {
 .navbar {
     position: fixed;
     z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar_container {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    top: 0;
-    left: 0;
 
     width: 100vw;
     height: 7.75rem;
     padding: 0 1rem;
 
-    background-color: #000;
-    color: #fff;
+    
 }
 
 .navbar__links {
@@ -137,15 +156,72 @@ li {
     transition: 0.3s all ease;
 }
 
-.btn:hover, .btn:active, .btn:focus {
-    border: var(--color-primary);
+.btn:hover, .btn:active, .btn:focus, .btn-institutional {
+    border-color: var(--color-primary);
     background-color: var(--color-primary);
     color: #fff;
-<<<<<<< HEAD
 }
 
 #counter {
     background-color: var(--color-primary);
-=======
->>>>>>> 4b31d20a19e8039afffffcc3879253e3f9dfc2af
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.counter_container {
+    padding: 4.375rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    place-items: center;
+}
+
+.counter_container h3 {
+    font-size: 2.1875rem;
+}
+
+.counter_container h3 small {
+    display: block;
+    font-size: 1.25rem;
+}
+
+.institutional {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    padding: 4.375rem 1rem;
+    gap: 3.125rem;
+}
+
+.institutional_image {
+    max-width: 640px;
+}
+
+.institutional_copy {
+    padding: 0 1.875rem;
+}
+
+.institutional_copy h6 {
+    font-size: 0.875rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.institutional_copy h4 {
+    font-size: 1.5625rem;
+    margin-top: 1rem;
+}
+
+.institutional p {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+    margin-bottom: 0;
+    margin-bottom: 2.5rem;
+}
+
+.btn-institutional:hover {
+    color: var(--color-copy);
+    background: unset;
 }
