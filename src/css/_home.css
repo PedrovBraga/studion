@@ -1,7 +1,46 @@
-#slider {
+.slider {
     background-color: black;
     color: white;
 }
+
+.slider_prev-arrow,
+.slider_next-arrow {
+    display: unset;
+}
+
+@media screen and (min-width: 1280px) {
+    .slider_prev-arrow,
+    .slider_next-arrow {
+        border: 5px solid #fff;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-right: none;
+        border-bottom: none;
+        margin: 1rem;
+        opacity: 0.8;
+    } 
+}
+    
+.slider_prev-arrow {
+    left: 0;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+
+.slider_next-arrow {
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.slider_prev-arrow::before,
+.slider_next-arrow::before {
+    content: "";
+}
+
+.slick-arrow {
+   display: unset;
+}
+
 .slide {
     position: relative;
     height: 90vh;
@@ -14,10 +53,32 @@
     object-position: center;
 }
 
+/* Mobile */
 .slide_copy {
     position: absolute;
-    top: 6.25rem;
-    left: 50vw;
+    top: 25vh;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    text-align: center;
+}
+
+.slide_copy span {
+    display: block;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+    .slide_copy {
+        padding-left: 50vw;
+        text-align: unset;
+    }
+
+    .slide_copy span {
+        display: inline;
+    }
 }
 
 .slide_copy h6 {
@@ -25,16 +86,25 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .1875rem;
+    color: #fff;
 }
 
 .slide_copy h2 {
-    font-size: 6.25rem;
+    font-size: 3.25rem;
     text-transform: uppercase;
-    line-height: 6.25rem;
+    line-height: 3.25rem;
+    color: #fff;
 }
 
 .slide_copy h2 span {
     display: block;
+}
+
+@media screen and (min-width: 1280px) {
+    .slide_copy h2 {
+        font-size: 6.25rem;
+        line-height: 6.25rem;
+    }
 }
 
 #counter {
@@ -59,21 +129,41 @@
     font-size: 1.25rem;
 }
 
-
+/* Mobile */
 .institutional {
     display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    padding: 4.375rem 1rem;
     gap: 3.125rem;
+    align-items: center;
+    padding: 0 0 4.375rem 0;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+    .institutional {
+        grid-template-columns: auto auto;
+        padding: 4.375rem;
+    }
 }
 
 .institutional_image {
-    max-width: 640px;
+    max-width: 100vw;
+}
+
+@media screen and (min-width: 1280px){
+    .institutional_image {
+        max-width: 550px;
+    }
 }
 
 .institutional_copy {
-    padding: 0 1.875rem;
+    padding: 0 1rem 1.875rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+    .institutional_copy{
+        padding: 0 1.875rem;
+    }
 }
 
 .institutional_copy h6 {
@@ -99,22 +189,42 @@
 
 .quote {
     background-image: url(../images/parallax.jpg);
-    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: auto 40%;
+    background-position: 40% top;
+}
+
+@media screen and (min-width: 1280px){
+    .quote{
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 .quote_container {
     min-height: 80vh;
     display: grid;
-    align-items: center;
+    align-items: end;
     justify-items: end;
+}
+
+@media screen and (min-width: 1280px){
+    .quote_container{
+        align-items: center;
+    }
 }
 
 .quote_copy {
     background-color: #fff;
-    padding: 5.625rem 4.375rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 1280px){
+    .quote_copy {
+        padding: 5.625rem 4.375rem;
+    }
 }
 
 .quote_copy h6 {
@@ -128,8 +238,8 @@
 }
 
 .quote_copy h2 {
-    font-size: 5rem;
-    line-height: 5rem;
+    font-size: 4rem;
+    line-height: 4rem;
     text-transform: uppercase;
     letter-spacing: -.1875rem;
     margin: 1.875rem 0;
@@ -139,3 +249,13 @@
     display: block;
 }
 
+@media screen and (min-width: 1280px){
+    .quote_copy h6 {
+        font-size: .9375rem;
+    }
+
+    .quote_copy h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+}

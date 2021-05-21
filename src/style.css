@@ -13,6 +13,9 @@
 
 @import './css/_home.css';
 @import './css/_contact.css';
+@import './css/_depoiment.css';
+@import './css/_empresa.css';
+@import './css/_galeria.css';
 
 header h6 {
     margin: 0;
