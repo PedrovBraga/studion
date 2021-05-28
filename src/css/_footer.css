@@ -6,14 +6,30 @@
 
 .footer_container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: unset;
+    grid-template-rows: auto;
+    gap: 2rem;
     align-items: center;
-    padding: 5.25rem 0 3.75rem 0rem;
+    padding: 3rem 0;
+}
+
+@media screen and (min-width: 1280px){
+    .footer_container {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: unset;
+        padding: 5.25rem 0 3.75rem 0rem;
+    }
 }
 
 .footer .logo-studion {
-    justify-self: start;
+    justify-self: center;
     margin: 0;
+}
+
+@media screen and (min-width: 1280px){
+    .footer .logo-studion{
+        justify-self: end;
+    }
 }
 
 .footer h2 {
@@ -23,8 +39,14 @@
 .footer_form {
     display: grid;
     place-items: center;
-    grid-template-columns: 9ch auto;
+    
     gap: 1.25rem;
+}
+
+@media screen and (min-width: 1280px){
+    .footer_form {
+        grid-template-columns: 9ch auto;
+    }
 }
 
 .footer_form label {
@@ -42,14 +64,22 @@
 }
 
 .footer_form input {
-    width: 100%;
+    width: 75%;
     background-color: var(--color-primary);
+    margin-left: 1.5rem;
     border: unset;
     padding: 1rem;
     font-size: .875rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #000;
+}
+
+@media screen and (min-width: 1280px) {
+    .footer_form input {
+        width: 100%;
+        margin-left: unset;
+    }
 }
 
 .footer_form input::placeholder {
@@ -74,8 +104,13 @@
 }
 
 .footer_social {
-    justify-self: end;
-    
+    justify-self: center;
+}
+
+@media screen and (min-width: 1280px){
+    .footer_social{
+        justify-self: end;
+    }
 }
 
 .footer_social a, 

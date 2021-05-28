@@ -1,0 +1,29 @@
+@import './_variables.css';
+
+h4 {
+   font-weight: 400;
+}
+
+.slider {
+   background-color: var(--color-primary);
+   color: black;
+}
+
+.ceo {
+   display: grid;
+   padding: 4rem 0rem;
+   text-align: center;
+}
+
+.ceo h2 {
+   display: grid;
+   font-weight: 700;
+   font-size: 2rem; 
+   text-align: right;
+   line-height: 1ch; /*relativa ao tamanho da altura do caracter 0 */
+   width: 47.5vw;
+}
+
+.ceo img {
+   margin: auto;
+}

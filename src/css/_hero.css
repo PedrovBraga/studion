@@ -1,6 +1,7 @@
 .hero {
     height: 34.625rem;
     position: relative;
+    overflow: hidden;
 }
 
 .hero_background {
